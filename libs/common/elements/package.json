@@ -1,0 +1,10 @@
+{
+  "name": "@workstream/common-elements",
+  "version": "0.0.1",
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "prebuild": "../../../node_modules/.bin/rimraf dist/my-lib && mkdir -p ../../../dist/libs/common/elements/schematics && cp -R schematics/ ../../../dist/libs/common/elements/schematics/",
+    "build": "../../../node_modules/.bin/tsc -p tsconfig.schematics.json",
+    "postbuild": "../../../node_modules/.bin/rimraf --glob ../../../dist/libs/common/elements/schematics/**/*.ts"
+  }
+}

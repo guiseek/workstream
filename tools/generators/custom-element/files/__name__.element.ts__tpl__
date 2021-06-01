@@ -1,0 +1,20 @@
+import { Autonomous, Component, Connected, html, css } from '@guiseek/common/web';
+
+@Autonomous({
+  selector: 'root',
+  mode: 'open'
+})
+export class <%= className %>Element extends Component(HTMLElement) implements Connected {
+  static observedAttributes = [];
+  template = css`
+
+  `
+
+  template = html`
+
+  `
+
+  connected() {
+
+  }
+}

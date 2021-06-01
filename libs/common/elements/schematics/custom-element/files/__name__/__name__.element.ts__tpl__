@@ -1,0 +1,44 @@
+import {
+  css,
+  html,
+  event,
+  listen,
+  Emitter,
+  Connected,
+  Component,
+  Autonomous,
+} from '@workstream/common/elements';
+
+@Autonomous({
+  selector: '<%= name %>',
+  mode: 'open'
+})
+export class <%= className %>Element
+  extends Component(HTMLElement)
+  implements Connected {
+  static observed = [];
+
+  @event()
+  onClick: Emitter<MouseEvent>;
+
+  @listen('button', 'click')
+  onClicked(event: EventWithTarget) {
+    this.onClick.emit(event.target);
+  }
+
+  styles = css`
+
+  `
+
+  template = html`
+    <button></button>
+  `
+
+  connected() {
+
+  }
+
+  public emitClick<D = unknown>(detail: D) {
+    this.onClick.emit(detail);
+  }
+}
