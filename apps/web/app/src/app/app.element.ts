@@ -112,7 +112,16 @@ export class AppElement extends Component(HTMLElement) implements Connected {
     .container {
       display: flex;
       /* justify-content: center; */
-      margin: 100px 0 20px;
+      margin: 10px 0;
+      gap: 10px;
+    }
+    details .container {
+      gap: 30px;
+    }
+    details details details .container {
+      gap: 60px;
+    }
+    details details details details .container {
       gap: 10px;
     }
   `;
@@ -124,52 +133,94 @@ export class AppElement extends Component(HTMLElement) implements Connected {
     <main>
       <h2>Next Steps</h2>
       <p>Here are some things you can do with Nx.</p>
-      <div class="container">
-        <web-button type="submit" value="123">
-          <img slot="prefix" src="assets/cloud-download.svg" />
-          <span>Small Button</span>
-          <img slot="suffix" src="assets/arrow-forward.svg" />
-        </web-button>
-      </div>
 
-      <details>
-        <summary>Code</summary>
-        <pre>
-&lt;web-button type="submit" value="123">
-  &lt;img slot="prefix" src="assets/cloud-download.svg" />
-  &lt;span>Small Button</span>
-  &lt;img slot="suffix" src="assets/arrow-forward.svg" />
-&lt;/web-button>
-</pre>
+      <details open>
+        <summary>Main Button</summary>
+
+        <div class="container">
+          <web-button type="submit" value="123">
+            <img slot="prefix" src="assets/cloud-download.svg" />
+            <span>Small Button</span>
+            <img slot="suffix" src="assets/arrow-forward.svg" />
+          </web-button>
+        </div>
+
+        <details open>
+          <summary>Button Types</summary>
+
+          <div class="container">
+            <web-button type="submit" class="filled" value="123">
+              <span>Filled Button</span>
+            </web-button>
+
+            <web-button type="submit" class="ghost" value="123">
+              <span>Ghost Button</span>
+            </web-button>
+
+            <web-button type="submit" class="borderless" value="321">
+              <span>Borderless Button</span>
+            </web-button>
+
+            <web-button type="submit" class="rounded" value="321">
+              <span>Rounded Button</span>
+            </web-button>
+          </div>
+
+          <!-- Button defaut state -->
+          <details open>
+            <summary>Button Defaut State</summary>
+
+            <div class="container">
+              <web-button type="submit" class="primary" value="123">
+                <span>Primary Color</span>
+              </web-button>
+
+              <web-button type="submit" class="secondary" value="123">
+                <span>Secondary Color</span>
+              </web-button>
+
+              <web-button type="submit" class="neutral" value="123">
+                <span>Neutral Color</span>
+              </web-button>
+            </div>
+
+            <!-- Button States -->
+            <details open>
+              <summary>Button States</summary>
+
+              <div class="container">
+                <div>
+                  <web-button type="submit" class="primary" value="123">
+                    <span>Small Button</span>
+                  </web-button>
+
+                  <web-button type="submit" class="primary" value="123">
+                    <span>Small Button</span>
+                  </web-button>
+
+                  <web-button type="submit" class="primary" disabled>
+                    <span>Small Button</span>
+                  </web-button>
+                </div>
+                <div>
+                  <web-button type="submit" class="secondary" value="123">
+                    <span>Small Button</span>
+                  </web-button>
+
+                  <web-button type="submit" class="secondary" value="123">
+                    <span>Small Button</span>
+                  </web-button>
+
+                  <web-button type="submit" class="secondary" value="123">
+                    <span>Small Button</span>
+                  </web-button>
+                </div>
+              </div>
+            </details>
+          </details>
+        </details>
       </details>
 
-      <div class="container">
-        <web-button type="submit" class="filled" value="123">
-          <span>Filled Button</span>
-        </web-button>
-      </div>
-      <details>
-        <summary>Code</summary>
-        <pre>
-&lt;web-button type="submit" class="filled" value="123">
-  &lt;span>Filled Button&lt;/span>
-&lt;/web-button>
-</pre>
-      </details>
-
-      <div class="container">
-        <web-button type="submit" class="ghost" value="123">
-          <span>Ghost Button</span>
-        </web-button>
-      </div>
-      <details>
-        <summary>Code</summary>
-        <pre>
-&lt;web-button type="submit" class="ghost" value="123">
-  &lt;span>Ghost Button&lt;/span>
-&lt;/web-button>
-</pre>
-      </details>
       <ul class="resources">
         <li class="col-span-2">
           <a

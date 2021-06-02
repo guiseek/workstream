@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@workstream/common/elements": ["libs/common/elements/src/index.ts"]
+      "@workstream/common/elements": ["libs/common/elements/src/index.ts"],
+      "@workstream/common/buttons": ["libs/common/buttons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

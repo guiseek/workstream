@@ -35,6 +35,9 @@
     "web-app-e2e": {
       "tags": [],
       "implicitDependencies": ["web-app"]
+    },
+    "common-buttons": {
+      "tags": []
     }
   }
 }

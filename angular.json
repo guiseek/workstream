@@ -287,6 +287,37 @@
           }
         }
       }
+    },
+    "common-buttons": {
+      "root": "libs/common/buttons",
+      "sourceRoot": "libs/common/buttons/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/common/buttons",
+            "main": "libs/common/buttons/src/index.ts",
+            "tsConfig": "libs/common/buttons/tsconfig.lib.json",
+            "assets": ["libs/common/buttons/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/buttons/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common/buttons"],
+          "options": {
+            "jestConfig": "libs/common/buttons/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
