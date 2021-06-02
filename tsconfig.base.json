@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@workstream/common/elements": ["libs/common/elements/src/index.ts"]
+      "@workstream/common/elements": ["libs/common/elements/src/index.ts"],
+      "@workstream/common/buttons": ["libs/common/buttons/src/index.ts"],
+      "@workstream/shared/webrtc/feature-audio": [
+        "libs/shared/webrtc/feature-audio/src/index.ts"
+      ],
+      "@workstream/common/icons": ["libs/common/icons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -32,8 +32,6 @@ export function BuiltIn({ selector, ...opts }: BuiltInOptions) {
     };
 
     target.prototype.connectedCallback = function (): void {
-      console.log(this.styles);
-
       if (styles || this.styles) {
         this.appendChild(styles || this.styles);
       }
