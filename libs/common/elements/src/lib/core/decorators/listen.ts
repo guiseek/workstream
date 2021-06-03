@@ -1,11 +1,5 @@
+import { CustomConstructor } from '../types';
 import { noop } from '../utilities';
-
-export type CustomConstructor = HTMLElement & {
-  connectedCallback?: () => void;
-  attributeChangedCallback?: (name: string, prev: string, next: string) => void;
-  disconnectedCallback?: () => void;
-  [P: string]: any;
-};
 
 /**
  * Decorator para escuta de eventos por

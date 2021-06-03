@@ -1,8 +1,8 @@
-import { WebButtonElement } from './web-button.element';
+import { WebButtonElement } from './button.element';
 
 declare global {
   interface HTMLElementTagNameMap {
-    'web-button': WebButtonElement;
+    'bkp-button': WebButtonElement;
   }
 
   type WebButtonType = 'button' | 'submit' | 'reset' | 'menu';

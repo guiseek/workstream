@@ -1,3 +1,5 @@
+import { BehaviorSubject } from 'rxjs';
+
 type Constructor = new (...args: any[]) => {};
 
 // Auxilia a especificação de tipo para os dados de estado
@@ -14,8 +16,8 @@ export type ComponentState<S> = S | Record<string, string | number | boolean>;
  * @returns
  */
 export function Component<
-  TBase extends Constructor,
-  SBase extends ComponentState<TBase>
+TBase extends Constructor,
+SBase extends ComponentState<TBase>,
 >(Base: TBase) {
   return class CustomElement extends Base {
     static observedAttributes?: string[];
@@ -30,14 +32,16 @@ export function Component<
      *
      * @todo usar campos privados ES2020
      */
-    _state = undefined;
+    // _state = undefined;
+    _state = new BehaviorSubject(null);
+
+    state$ = this._state.asObservable();
 
     setState(state: SBase) {
-      this._state = state;
+      this._state.next(state);
     }
-
     get state(): SBase {
-      return this._state;
+      return this._state.value;
     }
   };
 }

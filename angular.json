@@ -318,6 +318,68 @@
           }
         }
       }
+    },
+    "shared-webrtc-feature-audio": {
+      "root": "libs/shared/webrtc/feature-audio",
+      "sourceRoot": "libs/shared/webrtc/feature-audio/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/shared/webrtc/feature-audio",
+            "main": "libs/shared/webrtc/feature-audio/src/index.ts",
+            "tsConfig": "libs/shared/webrtc/feature-audio/tsconfig.lib.json",
+            "assets": ["libs/shared/webrtc/feature-audio/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/webrtc/feature-audio/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/webrtc/feature-audio"],
+          "options": {
+            "jestConfig": "libs/shared/webrtc/feature-audio/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "common-icons": {
+      "root": "libs/common/icons",
+      "sourceRoot": "libs/common/icons/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/common/icons",
+            "main": "libs/common/icons/src/index.ts",
+            "tsConfig": "libs/common/icons/tsconfig.lib.json",
+            "assets": ["libs/common/icons/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/icons/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common/icons"],
+          "options": {
+            "jestConfig": "libs/common/icons/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

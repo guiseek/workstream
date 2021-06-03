@@ -38,6 +38,12 @@
     },
     "common-buttons": {
       "tags": []
+    },
+    "shared-webrtc-feature-audio": {
+      "tags": []
+    },
+    "common-icons": {
+      "tags": []
     }
   }
 }

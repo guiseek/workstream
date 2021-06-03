@@ -1,0 +1,71 @@
+@import '../../../scss/variables';
+
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  border: none;
+
+  min-width: 81px;
+  min-height: 48px;
+
+  border-radius: 8px;
+
+  transition: all 200ms ease-in-out;
+
+  /* White */
+  background: $white;
+  /* Grey / 05 */
+  color: $grey-05;
+
+  &:hover {
+    /* Grey / 01 */
+    background: $grey-01;
+    /* Black */
+    color: $black;
+  }
+
+  &:disabled {
+    /* White */
+    background: $white;
+    /* Grey / 03 */
+    color: $grey-03;
+  }
+
+  svg {
+    /* Blue / 04 */
+    fill: $blue-04;
+  }
+
+  > .body > svg {
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 12px;
+  }
+
+  > .body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+  }
+}
