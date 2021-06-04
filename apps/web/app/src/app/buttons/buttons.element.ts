@@ -20,8 +20,10 @@ export class ButtonsElement
   @event()
   onClick: Emitter<MouseEvent>;
 
-  @listen('web-button', 'onClick')
+  @listen('button', 'click')
   onWebClick(event: EventWithTarget) {
+    console.log(event.currentTarget);
+
     this.onClick.emit(event.target);
   }
 
@@ -709,7 +711,7 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button class="shaded submit" is="shaded-button">
+          <button type="submit" class="shaded" is="shaded-button">
             <bs-icon slot="prefix" icon="check"></bs-icon>
             <span>Submit</span>
           </button>

@@ -37,6 +37,18 @@
       fill="currentColor" />
 
   </symbol>
+  <symbol id="chevron-left">
+    <title>chevron-left</title>
+    <path d="M16.4854 6.34317L15.0712 4.92896L8.00012 12L15.0712 19.0711L16.4854 17.6569L10.8285 12L16.4854 6.34317Z"
+      fill="currentColor" />
+  </symbol>
+
+  <symbol id="chevron-right">
+    <title>chevron-right</title>
+    <path d="M8.00012 6.34317L9.41434 4.92896L16.4854 12L9.41434 19.0711L8.00012 17.6569L13.657 12L8.00012 6.34317Z"
+      fill="currentColor" />
+  </symbol>
+
   <symbol id="arrow-left">
     <title>arrow-left</title>
     <path

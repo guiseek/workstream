@@ -6,5 +6,7 @@ module.exports = {
     '<rootDir>/libs/common/buttons',
     '<rootDir>/libs/shared/webrtc/feature-audio',
     '<rootDir>/libs/common/icons',
+    '<rootDir>/libs/common/cards',
+    '<rootDir>/libs/common/dialogs',
   ],
 };

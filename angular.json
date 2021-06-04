@@ -380,6 +380,68 @@
           }
         }
       }
+    },
+    "common-cards": {
+      "root": "libs/common/cards",
+      "sourceRoot": "libs/common/cards/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/common/cards",
+            "main": "libs/common/cards/src/index.ts",
+            "tsConfig": "libs/common/cards/tsconfig.lib.json",
+            "assets": ["libs/common/cards/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/cards/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common/cards"],
+          "options": {
+            "jestConfig": "libs/common/cards/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "common-dialogs": {
+      "root": "libs/common/dialogs",
+      "sourceRoot": "libs/common/dialogs/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/common/dialogs",
+            "main": "libs/common/dialogs/src/index.ts",
+            "tsConfig": "libs/common/dialogs/tsconfig.lib.json",
+            "assets": ["libs/common/dialogs/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/dialogs/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/common/dialogs"],
+          "options": {
+            "jestConfig": "libs/common/dialogs/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

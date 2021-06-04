@@ -91,7 +91,7 @@ export class ContainedButtonElement extends Component(HTMLButtonElement) {
     }
 
     button[is='contained-button']:disabled,
-    button[is='contained-button'].submit:disabled,
+    button[is='contained-button'][type="submit"]:disabled,
     button[is='contained-button'].cancel:disabled,
     button[is='contained-button'].delete:disabled {
       background-color: var(--grey-04);
@@ -101,8 +101,8 @@ export class ContainedButtonElement extends Component(HTMLButtonElement) {
     }
 
     /* Shared Content Submit */
-    button[is='contained-button'].submit,
-    button[is='contained-button'].submit:hover {
+    button[is='contained-button'][type="submit"],
+    button[is='contained-button'][type="submit"]:hover {
       border-color: transparent;
       color: var(--green-01);
       fill: var(--green-02);

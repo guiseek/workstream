@@ -737,7 +737,7 @@
   --shadow-grey-4dp-1-offset-x: 0;
   --shadow-grey-4dp-1-offset-y: 2;
   --shadow-grey-4dp-1-spread: 0;
-  /* --shadow-grey-8dp-0-type: dropShadow;
+  --shadow-grey-8dp-0-type: dropShadow;
   --shadow-grey-8dp-0-radius: 16;
   --shadow-grey-8dp-0-color: rgba(97, 97, 97, 0.14);
   --shadow-grey-8dp-0-offset-x: 0;
@@ -1072,5 +1072,5 @@
   --shadow-orange-32dp-1-color: rgba(191, 113, 15, 0.06);
   --shadow-orange-32dp-1-offset-x: 0;
   --shadow-orange-32dp-1-offset-y: 24;
-  --shadow-orange-32dp-1-spread: 10; */
+  --shadow-orange-32dp-1-spread: 10;
 }

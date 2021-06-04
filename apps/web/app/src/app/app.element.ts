@@ -32,6 +32,7 @@ export class AppElement extends Component(HTMLElement) implements Connected {
 
   template = html`
     <main>
+      <demo-dialogs></demo-dialogs>
       <demo-buttons></demo-buttons>
     </main>
   `;

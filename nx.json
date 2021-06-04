@@ -7,7 +7,7 @@
     ".eslintrc.json": "*"
   },
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "npmScope": "workstream",
   "tasksRunnerOptions": {
@@ -43,6 +43,12 @@
       "tags": []
     },
     "common-icons": {
+      "tags": []
+    },
+    "common-cards": {
+      "tags": []
+    },
+    "common-dialogs": {
       "tags": []
     }
   }
