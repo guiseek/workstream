@@ -1,8 +1,8 @@
-import { WebButtonElement } from './button.element';
+import { ButtonElement } from './button-base';
 import './button.types';
 
 describe('commonButtons', () => {
-  let button: WebButtonElement;
+  let button: ButtonElement;
 
   beforeEach(() => {
     button = document.createElement('web-button');

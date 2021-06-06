@@ -84,7 +84,7 @@ export class ButtonsElement
     <div>
       <section>
         <div>
-          <button is="text-button" value="123">Button</button>
+          <button is="text-button">Button</button>
         </div>
 
         <div>
@@ -222,14 +222,14 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button is="text-button" size="medium">
+          <button class="cancel" is="text-button" size="medium">
             <bs-icon slot="prefix" icon="cancel"></bs-icon>
             <span>Cancel</span>
           </button>
         </div>
 
         <div>
-          <button is="text-button" size="medium">
+          <button class="delete" is="text-button" size="medium">
             <bs-icon slot="prefix" icon="trash-empty"></bs-icon>
             <span>Delete</span>
           </button>
@@ -321,14 +321,14 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button is="text-button" size="small">
+          <button class="cancel" is="text-button" size="small">
             <bs-icon slot="prefix" icon="cancel"></bs-icon>
             <span>Cancel</span>
           </button>
         </div>
 
         <div>
-          <button is="text-button" size="small">
+          <button class="delete" is="text-button" size="small">
             <bs-icon slot="prefix" icon="trash-empty"></bs-icon>
             <span>Delete</span>
           </button>
@@ -1008,21 +1008,21 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button class="contained submit" is="contained-button">
+          <button type="submit" is="contained-button">
             <bs-icon slot="prefix" icon="check"></bs-icon>
             <span>Submit</span>
           </button>
         </div>
 
         <div>
-          <button class="contained cancel" is="contained-button">
+          <button class="cancel" is="contained-button">
             <bs-icon slot="prefix" icon="cancel"></bs-icon>
             <span>Cancel</span>
           </button>
         </div>
 
         <div>
-          <button class="contained delete" is="contained-button">
+          <button class="delete" is="contained-button">
             <bs-icon slot="prefix" icon="trash-empty"></bs-icon>
             <span>Delete</span>
           </button>
@@ -1106,21 +1106,21 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button class="contained submit" is="contained-button" size="medium">
+          <button type="submit" is="contained-button" size="medium">
             <bs-icon slot="prefix" icon="check"></bs-icon>
             <span>Submit</span>
           </button>
         </div>
 
         <div>
-          <button class="contained cancel" is="contained-button" size="medium">
+          <button class="cancel" is="contained-button" size="medium">
             <bs-icon slot="prefix" icon="cancel"></bs-icon>
             <span>Cancel</span>
           </button>
         </div>
 
         <div>
-          <button class="contained delete" is="contained-button" size="medium">
+          <button class="delete" is="contained-button" size="medium">
             <bs-icon slot="prefix" icon="trash-empty"></bs-icon>
             <span>Delete</span>
           </button>
@@ -1205,21 +1205,21 @@ export class ButtonsElement
         </div>
 
         <div>
-          <button class="contained submit" is="contained-button" size="small">
+          <button type="submit" is="contained-button" size="small">
             <bs-icon slot="prefix" icon="check"></bs-icon>
             <span>Submit</span>
           </button>
         </div>
 
         <div>
-          <button class="contained cancel" is="contained-button" size="small">
+          <button class="cancel" is="contained-button" size="small">
             <bs-icon slot="prefix" icon="cancel"></bs-icon>
             <span>Cancel</span>
           </button>
         </div>
 
         <div>
-          <button class="contained delete" is="contained-button" size="small">
+          <button class="delete" is="contained-button" size="small">
             <bs-icon slot="prefix" icon="trash-empty"></bs-icon>
             <span>Delete</span>
           </button>
@@ -1273,7 +1273,7 @@ export class ButtonsElement
         <summary>Main Button</summary>
 
         <div class="container">
-          <web-button type="submit" value="123">
+          <web-button type="submit">
             <img slot="prefix" src="assets/cloud-download.svg" />
             <span>Small Button</span>
             <bs-icon slot="suffix" icon="arrow-forward"></bs-icon>
@@ -1284,11 +1284,11 @@ export class ButtonsElement
           <summary>Button Types</summary>
 
           <div class="container">
-            <web-button type="submit" class="filled" value="123">
+            <web-button type="submit" class="filled">
               <span>Filled Button</span>
             </web-button>
 
-            <web-button type="submit" class="ghost" value="123">
+            <web-button type="submit" class="ghost">
               <span>Ghost Button</span>
             </web-button>
 
@@ -1306,15 +1306,15 @@ export class ButtonsElement
             <summary>Button Defaut State</summary>
 
             <div class="container">
-              <web-button type="submit" class="primary" value="123">
+              <web-button type="submit" class="primary">
                 <span>Primary Color</span>
               </web-button>
 
-              <web-button type="submit" class="secondary" value="123">
+              <web-button type="submit" class="secondary">
                 <span>Secondary Color</span>
               </web-button>
 
-              <web-button type="submit" class="neutral" value="123">
+              <web-button type="submit" class="neutral">
                 <span>Neutral Color</span>
               </web-button>
             </div>
@@ -1325,11 +1325,11 @@ export class ButtonsElement
 
               <div class="container">
                 <div>
-                  <web-button type="submit" class="primary" value="123">
+                  <web-button type="submit" class="primary">
                     <span>Small Button</span>
                   </web-button>
 
-                  <web-button type="submit" class="primary" value="123">
+                  <web-button type="submit" class="primary">
                     <span>Small Button</span>
                   </web-button>
 
@@ -1338,15 +1338,15 @@ export class ButtonsElement
                   </web-button>
                 </div>
                 <div>
-                  <web-button type="submit" class="secondary" value="123">
+                  <web-button type="submit" class="secondary">
                     <span>Small Button</span>
                   </web-button>
 
-                  <web-button type="submit" class="secondary" value="123">
+                  <web-button type="submit" class="secondary">
                     <span>Small Button</span>
                   </web-button>
 
-                  <web-button type="submit" class="secondary" value="123">
+                  <web-button type="submit" class="secondary">
                     <span>Small Button</span>
                   </web-button>
                 </div>

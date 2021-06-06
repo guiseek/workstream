@@ -2,7 +2,7 @@ import { TextButtonElement } from './text-button.element';
 
 declare global {
   interface HTMLElementTagNameMap {
-    'text-button': TextButtonElement;
+    'button[text-button]': TextButtonElement;
   }
 
   type ButtonSize = 'default' | 'medium' | 'small';

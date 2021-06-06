@@ -1,6 +1,5 @@
 import {
   css,
-  html,
   event,
   listen,
   Emitter,
@@ -30,7 +29,7 @@ export class DemoDialogsElement
 
   `;
 
-  template = html` <datepicker-dialog></datepicker-dialog> `;
+  // template = html` <datepicker-dialog></datepicker-dialog> `;
 
   connected() {}
 
